@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  min-height: 200vh;
+}
+
+.outer-container{
+  border: 3px dashed #000;
+  margin: 40px auto;
+  width: 75vw;
+  height: 85vh;
+  position: relative; /* for absolute */
+}
+
+.inner-container{
+  border: 2px solid black;
+  width: 40vw;
+  height: 50vh;
+  margin: 100px auto;
+  /* position: relative; /* for absolute */
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.absolute{
+  background-color: #00f;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* we can use this to make things disappear left: -100000px */
+}
+.relative{
+  background-color: #f0f;
+  position: relative;
+  top: 200px;
+  left: 100px;
+}
+.fixed{
+  background-color: #0f0;
+  position: fixed;
+  top: 100px;
+  z-index: 1;
+}
+.sticky{
+  background-color: #ff0;
+  position: sticky;
+  top: 100px;
+  top: 0;
+}
+
+
+/* Styling of exercise.html file */
+
+html{
+  scroll-behavior: smooth;
+}
+
+section{
+  height: 100vh;
+}
+
+.blue{background-color: #00f;}
+.red{background-color: #f00;}
+.green{background-color: green;}
+
+header, footer{
+  color: #fff;
+  text-align: center;
+  height: 100px;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  font-size: 5rem;
+}
+
+footer{
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 3rem;
+}
+
+a:visited{
+  color: #fff;
+}
+
+.social{
+  background-color: royalblue;
+  color: #fff;
+  font-size: inherit;
+  padding: 1rem;position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 1;
+}
