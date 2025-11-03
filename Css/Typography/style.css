@@ -1,0 +1,23 @@
+body{
+  padding: 5%;
+  font-size: 1rem;
+}
+
+p{
+  text-indent: 2em;
+  /* text-decoration: line-through; */
+  /* text-transform: capitalize;
+  text-align: center;
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace; */
+}
+
+ol{
+  list-style-type: lower-alpha;
+}
+
+/* This elements doesn't take or inherit the font size of the parent element that is body so we use font: inherit on them so they also get the same sizes/css */
+
+/* input, button{
+  font: inherit;
+} */
