@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font: 1.5rem sans-serif;
+  min-height: 100vh;
+}
+
+/* starting from 640px the h1 will be black and max */
+
+@media (min-width: 640px){  
+  h1{
+    background-color: #000;
+  }
+}
+
+/* Upto 900px h2 of main will be black after that normal */
+
+@media (max-width: 900px){  
+  main h2{
+    background-color: #000;
+    color: aliceblue;
+    font-size: 2rem;
+  }
+}
