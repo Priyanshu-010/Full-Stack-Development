@@ -104,7 +104,7 @@ const App = () => {
     }
   ];
   return (
-    <div>
+    <div className='min-h-screen w-full bg-black flex gap-10 p-20 flex-wrap justify-center'>
       {jobOpenings.map((card, idx)=>(
         <div key={idx}>
           <Card card={card}/>
