@@ -1,9 +1,15 @@
-import React from 'react'
+import TodoItem from "../components/TodoItem";
 
-const TodoList = () => {
+const TodoList = ({ todos }) => {
   return (
-    <div>TodoList</div>
-  )
-}
+    <div className="text-white flex flex-wrap gap-4 w-[70%]">
+      {todos.map((todo) => (
+        <div key={todo.id}>
+          <TodoItem todo={todo} />
+        </div>
+      ))}
+    </div>
+  );
+};
 
-export default TodoList
+export default TodoList;
