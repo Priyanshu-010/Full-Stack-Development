@@ -4,7 +4,7 @@ interface Todo{
   id: string,
   text: string,
   completed: boolean,
-  createdAt: Date
+  createdAt: number
 }
 const TodoList = ({todos}:{todos: Todo[]}) => {
  return (
