@@ -2,7 +2,7 @@ import React from 'react'
 
 function cityLayout({children, info}) {
   return (
-    <div>
+    <div className='flex'>
       {children}
       {info}
     </div>

@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import React from "react";
 
 function Page() {
-  const destination = ["Paris", "Tokyo", "Mumbai"];
+  const destination = ["Paris", "Tokyo", "NewYork"];
   const router = useRouter();
   return (
     <div className="flex justify-center items-center text-white h-full flex-col gap-4">
