@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div>About Page</div>
+    <div className='mt-25 w-[50%]'>Parallel Route</div>
   )
 }
 
