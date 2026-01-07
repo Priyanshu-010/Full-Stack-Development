@@ -62,3 +62,20 @@ git stash save "message" => to stash changes with a message
 git stash branch <branch_name> => to create a new branch from a stash and apply the stash to it
 git stash show => to see the changes in the most recent stash
 git stash show -p => to see the full diff of the most recent stash
+
+# Remote Repositories
+
+git pull => to fetch and merge changes from the remote repository to your local repository
+git fetch => to fetch changes from the remote repository without merging
+git push => to push your local commits to the remote repository
+git remote -v => to see the remote repositories
+git remote add origin <repository_url> => to add a remote repository
+git clone <repository_url> => to clone a remote repository to your local machine
+
+
+# Remote Repositories
+git branch -r => to see remote branches
+git branch -a => to see all branches (local and remote)
+git push -u origin <branch_name> => to push a new branch to the remote repository and set the upstream
+git pull origin <branch_name> => to pull changes from a specific branch in the remote repository
+
