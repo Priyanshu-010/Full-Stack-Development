@@ -1,6 +1,8 @@
 import { GoogleGenAI } from "@google/genai";
+import dotenv from "dotenv";
+dotenv.config();
 
-const ai = new GoogleGenAI({apiKey: "AIzaSyBoGGI_sDIRAMnojGYrq40qJ_0LnbiIRzc"});
+const ai = new GoogleGenAI({apiKey: process.env.GOOGLE_API_KEY});
 
 async function main() {
   const response = await ai.models.generateContent({
@@ -17,7 +19,15 @@ async function main() {
       {
         role: "user",
         parts: [{text: "What is my name?"}]
-      }
+      },
+      {
+        role: "model",
+        parts: [{text: "Your name is Priyanshu."}]
+      },
+      {
+        role: "user",
+        parts: [{text: "what is your name?"}]
+      },
     ]
   });
   console.log(response.text);
