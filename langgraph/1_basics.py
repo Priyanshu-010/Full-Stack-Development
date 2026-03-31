@@ -5,7 +5,6 @@ load_dotenv()
 
 from typing import TypedDict, List
 from langgraph.graph import StateGraph, START, END
-from IPython.display import Image, display
 
 if os.environ['GROQ_API_KEY']:
   print("GROQ API KEY FOUND")
@@ -61,10 +60,10 @@ first_graph = graph.compile()
 
 # Image(first_graph.get_graph().draw_mermaid_png())
 
-# Use this code to save the graph image in a file as I have done the above code is for jupyter notebook
+# Use this code to save the graph image in a file as I have done the above code is for jupyter notebook 
 
-# with open("graph.png", "wb") as f:
-#     f.write(first_graph.get_graph().draw_mermaid_png())
+with open("graphs/graph1.png", "wb") as f:
+    f.write(first_graph.get_graph().draw_mermaid_png())
 
 #when the code gives any error, you can use the below code to print the mermaid graph and debug it.
 
