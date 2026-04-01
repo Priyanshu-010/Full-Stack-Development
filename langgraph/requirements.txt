@@ -2,3 +2,7 @@ langgraph
 langchain-groq
 dotenv
 python-dotenv
+ddgs
+langchain-community
+arxiv
+pymupdf
