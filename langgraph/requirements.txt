@@ -6,3 +6,5 @@ ddgs
 langchain-community
 arxiv
 pymupdf
+wikipedia
+langchain
