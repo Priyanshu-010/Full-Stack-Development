@@ -4,7 +4,7 @@ import os
 load_dotenv()
 from pydantic import BaseModel, Field
 from langgraph.graph import StateGraph, START, END
-from IPython.display import Image, display
+# from IPython.display import Image, display
 
 if os.environ['GROQ_API_KEY']:
   print("GROQ API KEY FOUND")

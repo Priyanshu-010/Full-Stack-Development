@@ -95,8 +95,8 @@ def personal_info(name: str):
 
   return info.get(name, "No information available for this person.")
 
-personal_info_ans = personal_info.invoke("Alice")
-print(personal_info_ans)
+# personal_info_ans = personal_info.invoke("Alice")
+# print(personal_info_ans)
 
 
 # Binding the tools to the LLM
@@ -104,3 +104,5 @@ print(personal_info_ans)
 tools = [search_duckduckgo, arxiv_tool, wiki_tool, personal_info]
 
 llm_with_tools = llm.bind_tools(tools)
+response = llm_with_tools.invoke("What is the latest news on transformers in NLP?")
+print(response.tool_calls)
