@@ -7,6 +7,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+from langchain_community.tools import DuckDuckGoSearchResults
+from langchain.tools import tool
+
 from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
 
@@ -31,6 +34,15 @@ llm = ChatGroq(
 
 def chatbot(state: State):
   return {"messages": [llm.invoke(state["messages"])]}
+
+@tool
+def search_duckduckgo(query: str) -> str:
+
+    """This tool searches the latest news on DuckDuckGo for the given query and returns the results."""
+    duck_search = DuckDuckGoSearchResults()
+    return duck_search.invoke(query)
+
+
 
 graph_builder = StateGraph(State)
 
